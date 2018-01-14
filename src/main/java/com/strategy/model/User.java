@@ -19,4 +19,14 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public User(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("User{login='%s', password='%s'}", login, password);
+    }
 }
